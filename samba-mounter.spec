@@ -8,6 +8,7 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://invent.kde.org/system/samba-mounter
 Source0:	%{name}-%{git}.tar.bz2
+BuildRequires:  cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	cmake(KF5Auth)
 BuildRequires:	cmake(KF5Config)
@@ -41,8 +42,8 @@ Plasma 5 network samba drives.
 %setup -qn %{name}-%{git}
 
 %build
-%cmake_kde5
-%make
+%cmake
+%make_build
 
 %install
 %makeinstall -C build
