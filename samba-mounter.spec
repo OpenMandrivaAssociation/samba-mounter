@@ -8,7 +8,6 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org/
 Source0:	%{name}-%{git}.tar.bz2
-Patch0:		samba-mounter-20210613-ru.patch
 BuildRequires:	extra-cmake-modules
 BuildRequires:	kf5auth-devel
 BuildRequires:	kf5config-devel
@@ -40,7 +39,6 @@ Plasma 5 network samba drives.
 
 %prep
 %setup -qn %{name}-%{git}
-%patch0 -p1
 
 %build
 %cmake_kde5
