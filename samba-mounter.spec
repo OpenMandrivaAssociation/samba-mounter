@@ -6,15 +6,15 @@ Version:	0.1
 Release:	0.%{git}.1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		https://www.kde.org/
+Url:		https://invent.kde.org/system/samba-mounter
 Source0:	%{name}-%{git}.tar.bz2
 BuildRequires:	extra-cmake-modules
-BuildRequires:	kf5auth-devel
-BuildRequires:	kf5config-devel
-BuildRequires:	kf5i18n-devel
-BuildRequires:	kf5kcmutils-devel
-BuildRequires:	kf5kio-devel
-BuildRequires:	kf5solid-devel
+BuildRequires:	cmake(KF5Auth)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KCMUtils)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5Solid)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 
@@ -45,6 +45,6 @@ Plasma 5 network samba drives.
 %make
 
 %install
-%makeinstall_std -C build
+%makeinstall -C build
 
 %find_lang kcm_sambamounter
