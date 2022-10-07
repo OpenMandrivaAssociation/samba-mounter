@@ -21,8 +21,8 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 
 %description
 Plasma 5 network samba drives.
-
-%files -f kcm_sambamounter.lang
+#-f kcm_sambamounter.lang
+%files 
 %{_kde5_applicationsdir}/sambamounter.desktop
 %{_kde5_applicationsdir}/sambamounterapp.desktop
 %{_kde5_bindir}/samba-onstart
@@ -48,4 +48,4 @@ Plasma 5 network samba drives.
 %install
 %make_install -C build
 
-%find_lang kcm_sambamounter
+#find_lang kcm_sambamounter
