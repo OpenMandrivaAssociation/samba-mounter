@@ -21,8 +21,8 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 
 %description
 Plasma 5 network samba drives.
-
-%files -f kcm_sambamounter.lang
+#-f kcm_sambamounter.lang
+%files 
 %{_kde5_applicationsdir}/sambamounter.desktop
 %{_kde5_applicationsdir}/sambamounterapp.desktop
 %{_kde5_bindir}/samba-onstart
@@ -34,7 +34,7 @@ Plasma 5 network samba drives.
 %{_datadir}/polkit-1/actions/org.kde.sambamounter.policy
 %{_datadir}/dbus-1/system-services/org.kde.sambamounter.service
 %{_datadir}/dbus-1/system.d/org.kde.sambamounter.conf
-%{_qt5_plugindir}/kcm_sambamount.so
+%{_libdir}/plugins/kcm_sambamount.so
 
 #----------------------------------------------------------------------------
 
@@ -48,4 +48,4 @@ Plasma 5 network samba drives.
 %install
 %make_install -C build
 
-%find_lang kcm_sambamounter
+#find_lang kcm_sambamounter
