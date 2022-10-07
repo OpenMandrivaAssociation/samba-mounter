@@ -46,6 +46,6 @@ Plasma 5 network samba drives.
 %make_build
 
 %install
-%makeinstall -C build
+%make_install -C build
 
 %find_lang kcm_sambamounter
