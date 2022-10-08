@@ -34,7 +34,8 @@ Plasma 5 network samba drives.
 %{_datadir}/polkit-1/actions/org.kde.sambamounter.policy
 %{_datadir}/dbus-1/system-services/org.kde.sambamounter.service
 %{_datadir}/dbus-1/system.d/org.kde.sambamounter.conf
-%{_libdir}/qt5/plugins/kcm_sambamount.so
+#%{_libdir}/qt5/plugins/kcm_sambamount.so
+%{_qt5_plugindir}/kcm_sambamount.so
 
 #----------------------------------------------------------------------------
 
