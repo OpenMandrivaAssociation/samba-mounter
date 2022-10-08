@@ -48,6 +48,7 @@ Plasma 5 network samba drives.
 %install
 %make_install -C build
 
+mkdir %{buildroot}%{_libdir}/qt5/plugins/
 %__mv %{buildroot}%{_libdir}/plugins/ %{buildroot}%{_libdir}/qt5/plugins/
 
 #find_lang kcm_sambamounter
