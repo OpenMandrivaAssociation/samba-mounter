@@ -3,7 +3,7 @@
 Summary:	Plasma 5 network samba drives
 Name:		samba-mounter
 Version:	0.1
-Release:	
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://invent.kde.org/system/samba-mounter
